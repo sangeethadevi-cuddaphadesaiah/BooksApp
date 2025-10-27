@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BooksApp</string>
+    <string name="retry">Retry</string>
+    <string name="title">Book Name : </string>
+    <string name="authorName">Author Name : </string>
+    <string name="publishedYear">Published Year : </string>
+</resources>

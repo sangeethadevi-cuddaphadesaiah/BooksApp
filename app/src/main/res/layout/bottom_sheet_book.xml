@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="book"
+            type="com.example.booksapp.model.BookUiModel" />
+    </data>
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="@dimen/space_15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_200"
+            app:imageUrl="@{book.coverUrl}"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='@{@string/title + " "+ book.title}'
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/space_8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:authorList="@{book.authorNames}"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="@dimen/space_4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='@{@string/publishedYear + " " + book.publishYear}'
+            android:textSize="@dimen/text_size_small"
+            android:layout_marginTop="@dimen/space_4dp"/>
+
+    </LinearLayout>
+</layout>
