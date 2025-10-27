@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.toolbar)
 
-        supportActionBar?.title = getString(com.example.booksapp.R.string.app_name)
+        supportActionBar?.title = getString(com.example.booksapp.R.string.app_bar_name)
 
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
