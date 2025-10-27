@@ -43,7 +43,7 @@ Data Models (BooksResponse, Work, BookUiModel)
 
 ##  How to Run
 1. Clone this repository:
-   git clone https://github.com/<your-username>/BooksApp.git
+   git clone https://github.com/your-username/BooksApp.git
    
 Open the project in Android Studio.
 Build and run on a device or emulator.
